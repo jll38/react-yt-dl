@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -27,8 +27,10 @@ function setVid(props){
     console.log(url);
     return(
         <div id="video-area">
-                    <iframe width="400" height="300" src={`https://www.youtube.com/embed/${url}`}>
+                    <div className="wrapper">
+                    <iframe width="400" height="100" src={`https://www.youtube.com/embed/${url}`}>
                     </iframe>
+                    </div>
         </div>
     );
 }
