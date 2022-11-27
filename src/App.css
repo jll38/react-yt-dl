@@ -37,7 +37,11 @@ header #portfolio {
 main {
   min-height: 80vh;
   display: flex;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 footer {
@@ -54,9 +58,28 @@ footer {
   height: 175px;
   padding: 20px 15px;
   margin: auto;
+  margin-bottom: 20px;
   box-shadow: 23px 20px 55px -20px rgba(0, 0, 0, 0.77);
   -webkit-box-shadow: 23px 20px 55px -20px rgba(0, 0, 0, 0.77);
   -moz-box-shadow: 23px 20px 55px -20px rgba(0, 0, 0, 0.77);
 }
 
+#video-area{
+  float:left;
+}
+#download-prompts{
+  float:right;
+}
 #input-form {}
+
+#output-area{
+  min-height:150px;
+  text-align: left;
+  min-width: 300px;
+  width: 55.200%;
+  height: 175px;
+  padding: 20px 15px;
+  margin: auto;
+  margin-top:10px;
+
+}

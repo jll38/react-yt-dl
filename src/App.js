@@ -5,6 +5,7 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import handleSubmit from './yt-download.js'
+import RenderDownloads from './components/renderDownload';
 
 function App() {
   return (
@@ -21,12 +22,15 @@ function App() {
               <Form.Group id="input-form">
                 <Form.Label>Youtube URL</Form.Label>
                 <Form.Control id="input-text" type="text" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></Form.Control>
-                <Button variant="primary" onClick={() => {console.log('Clicked!'); handleSubmit();}}>Submit</Button>
+                <Button variant="primary" onClick={() => { console.log('Clicked!'); handleSubmit(); }}>Submit</Button>
               </Form.Group>
             </Form>
           </section>
+          <section id="output-area">
+          <RenderDownloads/>
+          </section>
         </main>
-        <footer>This project is intended for EDUCATIONAL USE only.<br/>Contact jll38@njit.edu for more information</footer>
+        <footer>This project is intended for EDUCATIONAL USE only.<br />Contact jll38@njit.edu for more information</footer>
       </div>
     </div>
   );
