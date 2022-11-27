@@ -19,40 +19,44 @@
   color: #61dafb;
 }
 
-header{
-  background-color:rgba(0, 0, 0, 0.836);
-  text-align:left;
+header {
+  background-color: rgba(0, 0, 0, 0.836);
+  text-align: left;
   padding: 10px 20px;
-  min-height:5vh;
-}
-header div{
-  display:inline-block;
-}
-header #portfolio{
-  float:right;
+  min-height: 5vh;
 }
 
-main{
-  min-height:80vh;
+header div {
+  display: inline-block;
+}
+
+header #portfolio {
+  float: right;
+}
+
+main {
+  min-height: 80vh;
   display: flex;
   align-content: center;
 }
 
-footer{
-  font-size:50%;
-  color:#828282;
+footer {
+  font-size: 50%;
+  color: #828282;
 }
 
-#input-area{
+#input-area {
   text-align: left;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   background: white;
-  min-width:300px;
+  min-width: 300px;
   width: 55.200%;
   height: 175px;
-  padding: 20px 10px;
+  padding: 20px 15px;
   margin: auto;
+  box-shadow: 23px 20px 55px -20px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: 23px 20px 55px -20px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: 23px 20px 55px -20px rgba(0, 0, 0, 0.77);
 }
-#input-form{
 
-}
+#input-form {}

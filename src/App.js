@@ -21,12 +21,12 @@ function App() {
               <Form.Group id="input-form">
                 <Form.Label>Youtube URL</Form.Label>
                 <Form.Control id="input-text" type="text" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></Form.Control>
-                <Button>Submit</Button>
+                <Button variant="primary" onClick={() => {console.log('Clicked!'); handleSubmit();}}>Submit</Button>
               </Form.Group>
             </Form>
           </section>
         </main>
-        <footer>This project is intended for EDUCATIONAL USE only. <br/>Contact jll38@njit.edu for more information</footer>
+        <footer>This project is intended for EDUCATIONAL USE only.<br/>Contact jll38@njit.edu for more information</footer>
       </div>
     </div>
   );
