@@ -8,11 +8,13 @@
 }
 
 .App-Container {
-  background-color: #272729;
+  background: rgb(104,190,255);
+  background: linear-gradient(180deg, rgba(104,190,255,1) 0%, rgba(3,4,31,1) 100%);
   min-height: 100vh;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow:hidden;
 }
 
 .App-link {
@@ -101,5 +103,9 @@ footer {
   padding: 20px 15px;
   margin: auto;
   margin-top:10px;
+}
 
+#output-area aside{
+  padding:20px 10px;
+  text-shadow: black 2px 2px 2px;
 }
