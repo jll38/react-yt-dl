@@ -23,7 +23,7 @@ export default class RenderDownloads extends React.Component{
 
 function setVid(props){
     // var urlInput = document.getElementById('input-text').value;
-    var url = props.substring(props.indexOf('?v=') + 3, props.indexOf('&'));
+    var url = props.substring(props.indexOf('?v=') + 3, props.indexOf('&')); //Grabs video ID from link
     console.log(url);
     return(
         <div id="video-area">
